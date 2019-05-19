@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>媒体查询 </title>
+	    <style type="text/css">
+	    	/*.section{
+	    		width: 600px;
+	    		height: 500px;
+	    		background: gold;
+	    	}*/
+	    	/*向所有能显示颜色的设备应用样式表*/
+	        @media (color){
+	        	.section{
+	        		height: 500px;
+	        		width: 900px;
+	        		background-color: lightblue;
+	        	}
+	        }
+	        @media (min-width:600px)  and (min-width:700px){
+	        	.section{
+	        		height: 300px;
+	        		width: 300px;
+	        		background-color: red;
+	        		transform: 2s;
+	        	}
+	        }
+	        @media (min-width:700px)  and (min-width:800px){
+	        	.section{
+	        		height: 300px;
+	        		width: 300px;
+	        		background-color: green;        		
+	        	}
+	        }
+	      /* 宽高比描述啦设备目标显示区域的宽高比.该值包含两个以"/"*//*分隔的正整数.代表啦水平像素数(第一个值)与垂直像素数(第二个值)的比*/
+	        /*@media (min-aspect-ratio:1/1){
+	        	.section{
+	        		height: 400px;
+	        		width: 500px;
+	        		background-color: red;
+	        	}
+	        }*/
+	       /*@media (min-width-height:800px){
+	       	.section{
+	       		height: 100px;
+	       		width: 100px;
+	       		background-color: black;
+	       	}
+	       }*/
+	      /*@media screen and(min-width:400px)and(min-width:500px){
+	      	.section{
+	      		width: 500px;
+	      		height: 300px;
+	      		background-color: firebrick;
+	      	}
+	      }*/
+	    </style>
+	</head>
+	
+	<body>
+		<div class="section">
+			
+		</div>
+	</body>
+</html>
